@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "directory-file-mapping"
+version = "0.1.0a0"
+description = "A simple Python class that lets you treat the files in a directory as a mapping object, like a dict."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "scandir; python_version < '3.5'",
+    "typing; python_version < '3.5'"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/directory-file-mapping"
+"Bug Tracker" = "https://github.com/jifengwu2k/directory-file-mapping/issues"
